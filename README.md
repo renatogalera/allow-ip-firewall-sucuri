@@ -16,7 +16,7 @@ go build allow-ip-sucuri.go
 chmod +x allow-ip-sucuri
 ```
 
-On linux, add task in Crontab - Obs: Edit address folder (dir/...). The task check run every three minutes.
+On linux, add task in Crontab - Obs: Edit folder address (dir/...). The task check run every three minutes.
 
 ```
 crontab -l | { cat; echo "*/3 * * * * dir/allow-ip-firewall-sucuri/allow-ip-sucuri"; } | crontab -
