@@ -1,5 +1,7 @@
 # allow-ip-firewall-sucuri
 
+Allow automatically your dynamic IP in Firewall https://sucuri.net 
+
 Add API_KEY and API_SECRET in config.env
 
 - Installation
