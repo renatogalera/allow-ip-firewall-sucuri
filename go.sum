@@ -1,0 +1,4 @@
+github.com/GlenDC/go-external-ip v0.0.0-20170425150139-139229dcdddd h1:rSJam98YSpHfphLFH6XKBPkYwMbXTkxtmgRbrS+9qek=
+github.com/GlenDC/go-external-ip v0.0.0-20170425150139-139229dcdddd/go.mod h1:hv0fvWlrvguh97IboNbAyU1MwG+VpWUODlzwG5wNtrA=
+github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
+github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqxOKXbg=
