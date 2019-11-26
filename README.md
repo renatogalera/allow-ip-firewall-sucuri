@@ -38,9 +38,7 @@ cd allow-ip-firewall-sucuri
 
 cp config.env.example config.env
 
-vim config.
-
-#Before delete lines 111/121 for looping docker version
+vim config
 
 go build main.go
 
@@ -48,5 +46,5 @@ go build main.go
 
 #Add on linux crontab
 
-crontab -l | { cat; echo "*/3 * * * * $(pwd)/main"; } | crontab -
+crontab -l | { cat; echo "@reboot $(pwd)/main"; } | crontab -
 ```
