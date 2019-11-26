@@ -38,7 +38,9 @@ cd allow-ip-firewall-sucuri
 
 cp config.env.example config.env
 
-vim config.env
+vim config.
+
+#Before delete lines 111/121 for looping docker version
 
 go build main.go
 
