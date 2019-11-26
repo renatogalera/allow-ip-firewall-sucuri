@@ -61,13 +61,13 @@ func getAllowIP() SucuriSettings {
 	}
 	req, err := client.Get("https://waf.sucuri.net/api?v2&k=" + API_KEY + "&s=" + API_SECRET + "&a=show_settings")
 	if err != nil {
-		log.Fatal("Error to get info", err.Error())
+		log.Println("Error to get info", err.Error())
 	}
 	defer req.Body.Close()
 	if req.StatusCode == 200 {
 		body, err := ioutil.ReadAll(req.Body)
 		if err != nil {
-			log.Fatal("Error to read sucuri page", err.Error())
+			log.Println("Error to read sucuri page", err.Error())
 		}
 		json.Unmarshal(body, &s)
 		return s
@@ -81,13 +81,13 @@ func addIP()  {
 	}
 	req, err := client.Get("https://waf.sucuri.net/api?k=" + API_KEY + "&s=" + API_SECRET + "&a=whitelist")
 	if err != nil {
-		log.Fatal("Error to get info", err.Error())
+		log.Println("Error to get info", err.Error())
 	}
 	defer req.Body.Close()
 	if req.StatusCode == 200 {
 		body, err := ioutil.ReadAll(req.Body)
 		if err != nil {
-			log.Fatal("Error to read sucuri page", err.Error())
+			log.Println("Error to read sucuri page", err.Error())
 		}
 		fmt.Println(string(body))
 	}
